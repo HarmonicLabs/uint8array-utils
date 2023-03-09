@@ -1,3 +1,6 @@
+# tsc out
+dist/
+
 # Logs
 logs
 *.log

@@ -4,7 +4,8 @@
   "description": "a Buffer who didn't believe it enough",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc --project ./tsconfig.json && tsc-alias -p ./tsconfig.json"
   },
   "repository": {
     "type": "git",
