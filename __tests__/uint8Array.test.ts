@@ -1,4 +1,4 @@
-import { fromHex, toHex } from "../index";
+import { fromHex, toHex } from "../src";
 
 function randArr(): number[]
 {
