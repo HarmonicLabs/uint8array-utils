@@ -14,7 +14,7 @@ const hexChars = Object.freeze(
     Array.from(
         "0123456789abcdef"
     )
-)
+);
 
 function isLowerCaseHex( str: string ): boolean
 {

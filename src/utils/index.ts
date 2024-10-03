@@ -7,7 +7,8 @@ export const enum Ord {
 
 export function lexCompare( a: Uint8Array, b: Uint8Array ): Ord
 {
-    const minLen = a.length < b.length ? a.length : b.length;
+    const min = a.length < b.length ? a : b;
+    const minLen = min.length;
 
     for( let i = 0; i < minLen; i++ )
     {
@@ -21,7 +22,8 @@ export function lexCompare( a: Uint8Array, b: Uint8Array ): Ord
         // if( _a === _b ) continue;
     }
 
-    return Ord.EQ;
+    return a.length === b.length ? Ord.EQ :
+    (a.length < b.length ? Ord.LT : Ord.GT);
 }
 
 export function uint8ArrayEq( a: Uint8Array, b: Uint8Array )
