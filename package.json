@@ -1,6 +1,6 @@
 {
   "name": "@harmoniclabs/uint8array-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a Buffer who didn't believe it enough",
   "main": "dist/index.js",
   "files": [
