@@ -6,3 +6,4 @@ export * from "./readUint";
 export * from "./writeUint";
 export * from "./utils";
 export * from "./concat";
+export * from "./base64";
